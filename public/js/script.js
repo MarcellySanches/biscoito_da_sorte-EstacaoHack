@@ -360,17 +360,15 @@ sortes = [
     'Seus interesses de trabalho podem capturar o mais alto status ou prestígio.'
 ];
 
-// const sorte = require('sortes')
 
-// console.log(sorte)
 
 // // clique
 function cliqueGerarSorte() {
     
     var geradorSorte = sortes[Math.floor(Math.random() * sortes.length)];
+    
     var campoFrase = document.getElementById("frase");
-    // document.getElementById("frase").innerText = geradorSorte
-
-    campoFrase.innerHTML = geradorSorte
+    
+    campoFrase.textContent = geradorSorte
     
 };
