@@ -7,4 +7,4 @@
 -- INSERT INTO sortes(texto) values('Uma agradável surpresa está esperando por você.');
 -- INSERT INTO sortes(texto) values('Um sorriso é o seu tapete de boas-vindas pessoal.');
 
--- SELECT * FROM sortes
+SELECT * FROM sortes

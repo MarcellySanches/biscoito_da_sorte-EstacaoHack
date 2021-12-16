@@ -21,7 +21,7 @@ app.get('/', async (req, res) => {
    var result = await db.query('SELECT texto FROM sortes ORDER BY RANDOM() LIMIT 1')
 
   
-  console.log(result.rows)
+  
 
   res.render('index',{frase:result.rows})
 
