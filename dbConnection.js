@@ -7,4 +7,13 @@ const client = new Pool({
   }
 })
 
+// teste de conexão
+
+// async function connectTeste(){
+//       const res= await client.query('SELECT $1:: text as message',['Olá mundo'],(err,result) =>{
+//           console.log(result.rows[0].message)
+//       })
+//   }
+//   connectTeste()
+
 module.exports = client

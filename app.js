@@ -1,7 +1,9 @@
 const express = require('express')
 // const db = require('./dbConnection')
 
-const sorte = require('./mockup')
+// const sorte = require('./mockup')
+
+const db = require ('./dbConnection')
 
 const app = express()
 
