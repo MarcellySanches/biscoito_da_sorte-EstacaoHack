@@ -16,10 +16,14 @@ app.use(express.static('./public'))
 
 // Rotas
 // ---------------------------------------------
-app.get('/', (req, res) => {
-  var geradorSorte = sorte[Math.floor(Math.random() * sorte.length)];
+app.get('/', async (req, res) => {
+  // var geradorSorte = sorte[Math.floor(Math.random() * sorte.length)];
+   var result = await db.query('SELECT texto FROM sortes ORDER BY RANDOM() LIMIT 1')
 
-  res.render('index',{frase:`${geradorSorte}`})
+  
+  console.log(result.rows)
+
+  res.render('index',{frase:result.rows})
 
 });
 
