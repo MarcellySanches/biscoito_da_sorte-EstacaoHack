@@ -2,9 +2,14 @@
   "name": "biscoito_da_sorte-estacaohack",
   "version": "1.0.0",
   "description": "Mini Hackaton Projeto Biscoito da Sote",
-  "main": "index.js",
+  "engines": {
+    "node":"14.17.5",
+    "npm":"6.14.14"
+  },
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node.app.js"
   },
   "repository": {
     "type": "git",
