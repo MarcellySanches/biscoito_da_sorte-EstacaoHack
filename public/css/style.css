@@ -13,6 +13,11 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
       Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
+
+.btn-gerar {
+    color: thistle !important;
+    background: black !important;
+}
   
   /* CARD */
   
