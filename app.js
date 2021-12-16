@@ -15,8 +15,9 @@ app.use(express.static('./public'))
 // Rotas
 // ---------------------------------------------
 app.get('/', (req, res) => {
+  var geradorSorte = sorte[Math.floor(Math.random() * sorte.length)];
 
-  res.render('index')
+  res.render('index',{frase:`${geradorSorte}`})
 
 });
 
